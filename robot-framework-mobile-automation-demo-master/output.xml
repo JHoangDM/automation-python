@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.2rc1 on win32)" generated="2024-06-11T15:45:28.795096" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test Web" source="C:\testJOb\robot-framework-mobile-automation-demo-master\robot-framework-mobile-automation-demo-master\test-cases\web_app\login_test_web.robot">
+<test id="s1-t1" name="Validate search successful" line="8">
+<kw name="Go to the google page" owner="Google_page">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-11T15:45:28.946640" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-11T15:45:28.946640" elapsed="1.483039"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-11T15:45:30.430182" level="INFO">Opening url 'https://www.sacombank.com.vn/ca-nhan.html'</msg>
+<arg>https://www.sacombank.com.vn/ca-nhan.html</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-11T15:45:30.429679" elapsed="4.427576"/>
+</kw>
+<status status="PASS" start="2024-06-11T15:45:28.946137" elapsed="5.911118"/>
+</kw>
+<kw name="Click the Account button" owner="Google_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-11T15:45:34.859271" level="INFO">Clicking element '//a[@href="/ca-nhan/tai-khoan.html"]/div'.</msg>
+<arg>//a[@href="/ca-nhan/tai-khoan.html"]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-11T15:45:34.858268" elapsed="2.419623"/>
+</kw>
+<status status="PASS" start="2024-06-11T15:45:34.858268" elapsed="2.420951"/>
+</kw>
+<kw name="Verify the Account page" owner="Google_page">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-06-11T15:45:37.289273" level="INFO">${url} = https://www.sacombank.com.vn/ca-nhan/tai-khoan.html</msg>
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-06-11T15:45:37.279219" elapsed="0.010054"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-11T15:45:37.289273" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>https://www.sacombank.com.vn/ca-nhan/tai-khoan.html</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-06-11T15:45:37.289273" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-11T15:45:37.279219" elapsed="0.010054"/>
+</kw>
+<status status="PASS" start="2024-06-11T15:45:28.944847" elapsed="8.344426"/>
+</test>
+<status status="PASS" start="2024-06-11T15:45:28.796692" elapsed="8.494136"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Test Web">Login Test Web</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
