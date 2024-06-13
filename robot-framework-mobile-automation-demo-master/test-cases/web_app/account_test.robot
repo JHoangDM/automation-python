@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../../object-repository/page-objects/web_app/Google_page.robot
+Resource    ../../object-repository/page-objects/web_app/DashboardPagePO.robot
 
 
 *** Test Cases ***
